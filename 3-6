@@ -1,0 +1,19 @@
+invite = "We invite you to luns"
+guests = ["Misha", 'Nikita', 'Dima']
+del guests[2]
+guests.insert(2, "Sasha")
+guests.insert(0, "Denis")
+guests.insert(1, "Alina")
+guests.append("Airat")
+def list_guest(guests):
+  i = 5
+  result = '\n'
+  while i >= 0: 
+    invation = "We invite you to luns " + guests[i] + "\n"
+    i -= 1
+    result = invation + result 
+  return result 
+print("Expanding the guest list")
+print(list_guest(guests))
+print(guests)
+print(invite)
